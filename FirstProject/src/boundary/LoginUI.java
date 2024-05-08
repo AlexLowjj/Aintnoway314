@@ -79,9 +79,9 @@ public class LoginUI extends JFrame {
                                  dispose();
                                 break;
                             case "Seller":
-                            	SellerMenuUI sellerMenuUI  = new SellerMenuUI(34);
-                            	sellerMenuUI.setVisible(true);
-                                 dispose();
+                                SellerMenuUI sellerMenuUI = new SellerMenuUI(34); // Printing user ID
+                                sellerMenuUI.setVisible(true);
+                                dispose();
                                 break;
                             default:
                                 JOptionPane.showMessageDialog(LoginUI.this, 

@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CreatePropertyUI",
+            "request": "launch",
+            "mainClass": "FirstProject/boundary.CreatePropertyUI",
+            "projectName": "FirstProject"
+        },
+        {
+            "type": "java",
             "name": "LoginUI",
             "request": "launch",
             "mainClass": "FirstProject/boundary.LoginUI",

@@ -78,6 +78,11 @@ public class LoginUI extends JFrame {
                             	agentUI.setVisible(true);
                                  dispose();
                                 break;
+                            case "Seller":
+                            	SellerMenuUI sellerMenuUI  = new SellerMenuUI(34);
+                            	sellerMenuUI.setVisible(true);
+                                 dispose();
+                                break;
                             default:
                                 JOptionPane.showMessageDialog(LoginUI.this, 
                                     "Please check with developer about the usertype",

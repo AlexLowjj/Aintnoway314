@@ -117,4 +117,47 @@ public class PropertyListing {
         return properties;
     }
 
+    private int propertyId;
+	private int view;
+	private int shortlisted;
+
+	public PropertyListing() {
+		propertyId = -1;
+		location = null;
+		view = 0;
+		shortlisted = 0;
+	}
+
+	public void setPropertyId(int propertyId) {
+		this.propertyId = propertyId;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public void setView(int view) {
+		this.view = view;
+	}
+
+	public void setShortlisted(int shortlisted) {
+		this.shortlisted = shortlisted;
+	}
+
+	public int getPropertyId() {
+		return propertyId;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public int getView() {
+		return view;
+	}
+
+	public int getShortlisted() {
+		return shortlisted;
+	}
+
 }

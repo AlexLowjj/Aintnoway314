@@ -2,10 +2,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LoginUI",
+            "request": "launch",
+            "mainClass": "FirstProject/boundary.LoginUI",
+            "projectName": "FirstProject"
+        },
+        {
+            "type": "java",
             "name": "AdminUI",
             "request": "launch",
             "mainClass": "FirstProject/boundary.AdminUI",
             "projectName": "FirstProject"
+        },
+        {
+            "type": "java",
+            "name": "Run with AppMap",
+            "request": "launch",
+            "mainClass": "",
+            "vmArgs": "-javaagent:${userHome}\\.appmap\\lib\\java\\appmap.jar"
         },
         {
             "type": "java",

@@ -3,8 +3,6 @@ package boundary;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-//import NotInUse.LoginUI;
-
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -145,14 +143,12 @@ public class SellerMenuUI extends JFrame {
 						SellerMenuUI.this.getY());
 
 			} else if (e.getSource() == logoutButton) {
-				// Dispose of the current SellerMenuUI instance
-				dispose();
-			
-				// Show the LoginUI instance
+				// dispose seller menu page
+				SellerMenuUI.this.dispose();
+
+				// go to a new login page
 				LoginUI loginUI = new LoginUI();
-				loginUI.setVisible(true);
 			}
-			
 		}
 	}
 }

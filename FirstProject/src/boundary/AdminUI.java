@@ -92,6 +92,7 @@ public class AdminUI extends JFrame {
     		}
     	});
     };
+
     private void setupRefreshButton() {
     	refreshButton.addActionListener(e -> {
     		UserAccount userAccount = new UserAccount();  

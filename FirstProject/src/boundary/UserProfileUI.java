@@ -76,10 +76,19 @@ public class UserProfileUI extends JFrame {
         add(scrollPane, BorderLayout.CENTER);
         displayRoles();
 
+        setupShowUserButton();
         setupSearchButton();
         setUpLogoutButton();
         setupCreateRoleButton();
         setupRefreshButton();
+    }
+    
+    private void setupShowUserButton() {
+    	showUserButton.addActionListener(e -> {
+    			dispose(); 
+    			AdminUI adminUI = new AdminUI();
+    		    adminUI.setVisible(true);
+    	});
     }
 
     private void setUpLogoutButton() {

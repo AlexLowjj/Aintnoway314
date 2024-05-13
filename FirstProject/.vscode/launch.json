@@ -2,31 +2,24 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CreatePropertyUI",
+            "name": "LoginUI",
             "request": "launch",
-            "mainClass": "FirstProject/boundary.CreatePropertyUI",
-            "projectName": "FirstProject"
+            "mainClass": "CSIT314Project/boundary.LoginUI",
+            "projectName": "CSIT314Project"
         },
         {
             "type": "java",
-            "name": "LoginUI",
+            "name": "AgentViewPropertyUI",
             "request": "launch",
-            "mainClass": "FirstProject/boundary.LoginUI",
-            "projectName": "FirstProject"
+            "mainClass": "CSIT314Project/boundary.AgentViewPropertyUI",
+            "projectName": "CSIT314Project"
         },
         {
             "type": "java",
             "name": "AdminUI",
             "request": "launch",
-            "mainClass": "FirstProject/boundary.AdminUI",
-            "projectName": "FirstProject"
-        },
-        {
-            "type": "java",
-            "name": "Run with AppMap",
-            "request": "launch",
-            "mainClass": "",
-            "vmArgs": "-javaagent:${userHome}\\.appmap\\lib\\java\\appmap.jar"
+            "mainClass": "CSIT314Project/boundary.AdminUI",
+            "projectName": "CSIT314Project"
         },
         {
             "type": "java",

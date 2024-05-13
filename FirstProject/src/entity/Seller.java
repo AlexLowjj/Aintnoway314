@@ -204,12 +204,31 @@ public class Seller {
 			System.out.println(e.getMessage());
 
 		} finally {
+			// close connection
 			try {
 				if (connection != null) {
 					connection.close();
 				}
 			} catch (SQLException e) {
 				System.out.println(e.getMessage());
+			}
+
+			// close prepared statement
+			if (ps != null) {
+				try {
+					ps.close();
+				} catch (SQLException e) {
+					System.out.println(e.getMessage());
+				}
+			}
+
+			// close result set
+			if (rs != null) {
+				try {
+					ps.close();
+				} catch (SQLException e) {
+					System.out.println(e.getMessage());
+				}
 			}
 		}
 
@@ -237,32 +256,6 @@ public class Seller {
 			if (ps.executeUpdate() == 1) {
 				return true;
 			}
-
-			/*
-			 * // checks if the agent has already rated the agent before boolean exist =
-			 * false;
-			 * 
-			 * String sql =
-			 * "SELECT EXISTS(SELECT 1 FROM review WHERE userid=? AND agentuserid=?) AS exist;"
-			 * ; ps = connection.prepareStatement(sql); ps.setInt(1, userId); ps.setInt(2,
-			 * agentId);
-			 * 
-			 * rs = ps.executeQuery(); if (rs.next()) { exist = rs.getBoolean("exist"); }
-			 * 
-			 * // do update or insert based on if the row exists if (exist) { // do update
-			 * sql = "UPDATE review SET rating = ? WHERE userid = ? AND agentuserid = ?;";
-			 * ps = connection.prepareStatement(sql); ps.setString(1, rating); ps.setInt(2,
-			 * userId); ps.setInt(3, agentId);
-			 * 
-			 * if (ps.executeUpdate() == 1) { return true; }
-			 * 
-			 * } else { // do insert sql =
-			 * "INSERT INTO review (rating, review, userid, agentuserid) VALUES (?, 'nothing right now', ?, ?);"
-			 * ; ps = connection.prepareStatement(sql); ps.setString(1, rating);
-			 * ps.setInt(2, userId); ps.setInt(3, agentId);
-			 * 
-			 * if (ps.executeUpdate() == 1) { return true; } }
-			 */
 
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
@@ -337,79 +330,4 @@ public class Seller {
 
 		return false;
 	}
-
-//	public Hashtable<Integer, PropertyListing> getPropertyStats() {
-//
-//		// connect to DB
-//		Connection connection = ConnectDB.connect();
-//		if (connection == null) {
-//			System.out.println("Unable to connect to database.");
-//			return null;
-//		}
-//
-//		// get propertyid, location, timeview
-//		propertyListings = new Hashtable<>();
-//
-//		String sql = "SELECT propertyid, location, timeview " + "FROM properties " + "WHERE sellerid = ?;";
-//
-//		try (PreparedStatement ps = connection.prepareStatement(sql)) {
-//			ps.setInt(1, userId);
-//			ResultSet rs = ps.executeQuery();
-//
-//			while (rs.next()) {
-//				PropertyListing property = new PropertyListing();
-//				property.setPropertyId(rs.getInt("propertyid"));
-//				property.setLocation(rs.getString("location"));
-//				property.setView(rs.getInt("timeview"));
-//
-//				propertyListings.put(property.getPropertyId(), property);
-//			}
-//
-//		} catch (SQLException e) {
-//			System.out.println(e.getMessage());
-//		} finally {
-//			try {
-//				if (connection != null) {
-//					connection.close();
-//				}
-//			} catch (SQLException e) {
-//				System.out.println(e.getMessage());
-//			}
-//		}
-//
-//		// connect to DB
-//		connection = ConnectDB.connect();
-//		if (connection == null) {
-//			System.out.println("Unable to connect to database.");
-//			return null;
-//		}
-//
-//		// get number of shortlisted
-//		sql = "SELECT properties.propertyid, COUNT(*) AS count " + "FROM properties INNER JOIN favorites "
-//				+ "ON properties.propertyid = favorites.propertyid " + "WHERE sellerid = ? "
-//				+ "GROUP BY properties.propertyid;";
-//
-//		try (PreparedStatement ps = connection.prepareStatement(sql)) {
-//			ps.setInt(1, userId);
-//			ResultSet rs = ps.executeQuery();
-//
-//			while (rs.next()) {
-//				propertyListings.get(rs.getInt("propertyid")).setShortlisted(rs.getInt("count"));
-//				;
-//			}
-//
-//		} catch (SQLException e) {
-//			System.out.println(e.getMessage());
-//		} finally {
-//			try {
-//				if (connection != null) {
-//					connection.close();
-//				}
-//			} catch (SQLException e) {
-//				System.out.println(e.getMessage());
-//			}
-//		}
-//
-//		return propertyListings;
-//	}
 }

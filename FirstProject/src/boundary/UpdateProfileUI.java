@@ -3,7 +3,7 @@ package boundary;
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
-import control.GetProfileInfoByID;
+import control.GetProfileInfoByIDController;
 import control.UpdateProfileController;
 import entity.UserProfile;
 
@@ -72,7 +72,7 @@ public class UpdateProfileUI extends JDialog {
 
     private void loadData() {
     	UserProfile userProfile = new UserProfile(pdid);  
-        GetProfileInfoByID getProfileInfoByID = new GetProfileInfoByID(userProfile);
+        GetProfileInfoByIDController getProfileInfoByID = new GetProfileInfoByIDController(userProfile);
         List<String> roleInfo = getProfileInfoByID.getProfileByID(pdid);
         System.out.println(roleInfo);
 

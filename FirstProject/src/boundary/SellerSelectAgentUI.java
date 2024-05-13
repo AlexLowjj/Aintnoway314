@@ -39,10 +39,10 @@ public class SellerSelectAgentUI extends JFrame {
 		setResizable(true);
 		setBounds(x + 250, y, 330, 220);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setVisible(true);
 
 		// set components
 		setComponents();
+		setVisible(true);
 	}
 
 	public int getUserId() {

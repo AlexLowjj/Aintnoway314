@@ -15,7 +15,7 @@ import javax.imageio.ImageIO;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import control.GetTypeOfProfileController;
-import control.GetUserInfoByID;
+import control.GetUserInfoByIDController;
 import control.UpdateUserController;
 import entity.UserAccount;
 import entity.UserProfile;
@@ -241,7 +241,7 @@ public class UpdateUserUI extends JDialog {
 
     private void loadData() {
     	UserAccount userAccount = new UserAccount(userID);  
-        GetUserInfoByID getUserInfoByID = new GetUserInfoByID(userAccount);
+        GetUserInfoByIDController getUserInfoByID = new GetUserInfoByIDController(userAccount);
         List<String> userInfo = getUserInfoByID.getUserInfoByID(userID);
         
         if (userInfo != null && !userInfo.isEmpty()) {

@@ -121,6 +121,8 @@ public class BuyerMenuUI extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 
 			if (e.getSource() == propertyButton) {
+				BuyerViewAllPropertiesUI buyerViewAllPropertiesUI = new BuyerViewAllPropertiesUI(userId);
+				BuyerMenuUI.this.dispose();
 
 			} else if (e.getSource() == rateButton) {
 				BuyerSelectAgentUI selectUI = new BuyerSelectAgentUI("rate", userId, BuyerMenuUI.this.getX(),

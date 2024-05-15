@@ -5,6 +5,6 @@ import boundary.BuyerMenuUI;
 
 public class ExampleClass {
 	public static void main(String[] args) {
-		LoginUI test = new LoginUI();
+		BuyerMenuUI test = new BuyerMenuUI(2);
 	}
 }

@@ -109,7 +109,8 @@ public class Buyer {
 			agents = new ArrayList<>();
 
 			// prepare query
-			String sql = "SELECT * FROM Users WHERE usertype = 'Agent'";
+			String sql = "SELECT users.username, phone FROM users INNER JOIN profile ON users.userid = profile.userid "
+					+ "WHERE usertype = 'Agent';";
 			ps = connection.prepareStatement(sql);
 
 			// execute query and get ResultSet
@@ -118,19 +119,19 @@ public class Buyer {
 			if (rs.next()) {
 				// Extract agent details from the ResultSet
 				String username = rs.getString("username");
-				String email = rs.getString("email");
+				String phone = rs.getString("phone");
 
 				// Create an AgentContact object representing the agent
-				Agent agent = new Agent(username, email);
+				Agent agent = new Agent(username, phone);
 
 				// Add the agent to the list
 				agents.add(agent);
 
 				while (rs.next()) {
 					username = rs.getString("username");
-					email = rs.getString("email");
+					phone = rs.getString("phone");
 
-					agent = new Agent(username, email);
+					agent = new Agent(username, phone);
 
 					agents.add(agent);
 				}

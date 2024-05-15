@@ -42,13 +42,13 @@ public class BuyerContactAgentUI extends JFrame {
 	}
 
 	private void displayAgents(List<Agent> agents) {
-		String[] columnNames = { "Username", "Email" };
+		String[] columnNames = { "Username", "Phone" };
 		Object[][] data = new Object[agents.size()][columnNames.length];
 
 		for (int i = 0; i < agents.size(); i++) {
 			Agent agent = agents.get(i);
 			data[i][0] = agent.getUsername();
-			data[i][1] = agent.getEmail();
+			data[i][1] = agent.getPhone();
 		}
 
 		DefaultTableModel model = new DefaultTableModel(data, columnNames) {

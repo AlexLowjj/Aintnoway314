@@ -13,6 +13,7 @@ public class Agent {
 	private int userId;
 	private String username;
 	private String email;
+	private String phone;
 
 	public Agent(int userId) {
 		this.userId = userId;
@@ -23,9 +24,9 @@ public class Agent {
 		this.username = username;
 	}
 
-	public Agent(String username, String email) {
+	public Agent(String username, String phone) {
 		this.username = username;
-		this.email = email;
+		this.phone = phone;
 	}
 
 	public int getUserId() {
@@ -36,8 +37,8 @@ public class Agent {
 		return username;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getPhone() {
+		return phone;
 	}
 
 	public ArrayList<UserAccount> getMyRatings() {

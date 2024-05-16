@@ -9,8 +9,8 @@ public class RemovePropertyController {
 		this.propertyListing = propertyListing;
 	}
 
-	public boolean RemoveProperties(String type, String location, String pricing) {
-		return propertyListing.RemoveProperties(type, location, pricing);
+	public boolean removeProperties(String type, String location, String pricing) {
+		return propertyListing.removeProperties(type, location, pricing);
 	}
 
 }

@@ -116,7 +116,7 @@ public class AgentViewPropertyUI extends JFrame {
 						RemovePropertyController suspendPropertyController = new RemovePropertyController(
 								propertyListing);
 
-						boolean suspendStatus = suspendPropertyController.RemoveProperties(type, location, price);
+						boolean suspendStatus = suspendPropertyController.removeProperties(type, location, price);
 						if (suspendStatus) {
 							JOptionPane.showMessageDialog(null, "Properties had removed succesfully");
 							break;

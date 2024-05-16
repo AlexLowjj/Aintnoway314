@@ -86,7 +86,7 @@ public class AgentViewPropertyUI extends JFrame {
 		PropertyListing propertyListing = new PropertyListing();
 		viewPropertiesController = new ViewAllPropertiesController(propertyListing);
 
-		List<String[]> properties = viewPropertiesController.getAllUsers();
+		List<String[]> properties = viewPropertiesController.getAllProperty();
 		updateTableWithPropertyData(properties);
 
 		// double click to get info

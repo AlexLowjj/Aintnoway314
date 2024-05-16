@@ -70,7 +70,7 @@ public class PropertyListing {
 		return shortlisted;
 	}
 
-	public boolean suspendProperties(String type, String location, String pricing) {
+	public boolean RemoveProperties(String type, String location, String pricing) {
 		Connection conn = ConnectDB.connect();
 		if (conn == null) {
 			System.out.println("Unable to connect to the database.");

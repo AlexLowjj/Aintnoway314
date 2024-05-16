@@ -1,6 +1,6 @@
 package boundary;
 
-import control.SuspendPropertyController;
+import control.RemovePropertyController;
 import control.ViewAllPropertiesController;
 import entity.PropertyListing;
 
@@ -100,7 +100,7 @@ public class AgentViewPropertyUI extends JFrame {
 					String location = table.getModel().getValueAt(row, 1).toString();
 					String price = table.getModel().getValueAt(row, 3).toString();
 
-					String[] options = { "Update Properties", "Suspend Properties" };
+					String[] options = { "Update Properties", "Remove Properties" };
 					int choice = JOptionPane.showOptionDialog(null, "What would you like to do?", "User Management",
 							JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
 
@@ -113,12 +113,12 @@ public class AgentViewPropertyUI extends JFrame {
 						break;
 					case 1:
 						PropertyListing propertyListing = new PropertyListing();
-						SuspendPropertyController suspendPropertyController = new SuspendPropertyController(
+						RemovePropertyController suspendPropertyController = new RemovePropertyController(
 								propertyListing);
 
-						boolean suspendStatus = suspendPropertyController.suspendProperties(type, location, price);
+						boolean suspendStatus = suspendPropertyController.RemoveProperties(type, location, price);
 						if (suspendStatus) {
-							JOptionPane.showMessageDialog(null, "Properties had suspended succesfully");
+							JOptionPane.showMessageDialog(null, "Properties had removed succesfully");
 							break;
 						} else {
 							JOptionPane.showMessageDialog(null, "Fail to suspend the properties");

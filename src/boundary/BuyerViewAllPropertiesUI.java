@@ -9,7 +9,7 @@ import control.BuyerGetPropertyTypeController;
 import control.BuyerGetSoldPropertyController;
 import control.BuyerViewAllPropertiesController;
 import control.BuyerViewPropertyByCharController;
-import control.SuspendPropertyController;
+import control.RemovePropertyController;
 import entity.BuyerPropertyListing;
 import entity.CalculateMortage;
 import entity.PropertyListing;

@@ -73,8 +73,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="control.SuspendPropertyController" project="CSIT314Project" 
-    file="/CSIT314Project/src/control/SuspendPropertyController.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="9" language="java" name="control.RemovePropertyController" project="CSIT314Project" 
+    file="/CSIT314Project/src/control/RemovePropertyController.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="116" width="359" x="639" y="493"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -137,19 +137,19 @@
     </display>  
   </class>  
   <association id="16">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="17" name="propertyListing">        
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="17" name="agent">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="18" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
+    <end type="TARGET" refId="14" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="19">    
-    <end type="SOURCE" refId="10" navigable="false">      
+    <end type="SOURCE" refId="12" navigable="false">      
       <attribute id="20" name="propertyListing">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
@@ -161,19 +161,19 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="22">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="23" name="viewPropertiesController">        
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="23" name="propertyListing">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="24" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
+    <end type="TARGET" refId="15" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="25">    
-    <end type="SOURCE" refId="6" navigable="false">      
+    <end type="SOURCE" refId="9" navigable="false">      
       <attribute id="26" name="propertyListing">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
@@ -185,31 +185,31 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="28">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="29" name="propertyListing">        
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="29" name="viewPropertiesController">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="30" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
+    <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="31">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="32" name="agent">        
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="32" name="propertyListing">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="33" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
+    <end type="TARGET" refId="15" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="34">    
-    <end type="SOURCE" refId="9" navigable="false">      
+    <end type="SOURCE" refId="11" navigable="false">      
       <attribute id="35" name="propertyListing">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
@@ -221,7 +221,7 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="37">    
-    <end type="SOURCE" refId="8" navigable="false">      
+    <end type="SOURCE" refId="7" navigable="false">      
       <attribute id="38" name="agent">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
@@ -233,7 +233,7 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="40">    
-    <end type="SOURCE" refId="13" navigable="false">      
+    <end type="SOURCE" refId="6" navigable="false">      
       <attribute id="41" name="propertyListing">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      

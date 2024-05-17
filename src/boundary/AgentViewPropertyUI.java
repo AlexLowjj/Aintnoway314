@@ -1,6 +1,6 @@
 package boundary;
 
-import control.RemovePropertyController;
+import control.SuspendPropertyController;
 import control.ViewAllPropertiesController;
 import entity.PropertyListing;
 
@@ -86,7 +86,7 @@ public class AgentViewPropertyUI extends JFrame {
 		PropertyListing propertyListing = new PropertyListing();
 		viewPropertiesController = new ViewAllPropertiesController(propertyListing);
 
-		List<String[]> properties = viewPropertiesController.getAllProperty();
+		List<String[]> properties = viewPropertiesController.getAllUsers();
 		updateTableWithPropertyData(properties);
 
 		// double click to get info
@@ -100,7 +100,7 @@ public class AgentViewPropertyUI extends JFrame {
 					String location = table.getModel().getValueAt(row, 1).toString();
 					String price = table.getModel().getValueAt(row, 3).toString();
 
-					String[] options = { "Update Properties", "Remove Properties" };
+					String[] options = { "Update Properties", "Suspend Properties" };
 					int choice = JOptionPane.showOptionDialog(null, "What would you like to do?", "User Management",
 							JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
 
@@ -113,12 +113,12 @@ public class AgentViewPropertyUI extends JFrame {
 						break;
 					case 1:
 						PropertyListing propertyListing = new PropertyListing();
-						RemovePropertyController suspendPropertyController = new RemovePropertyController(
+						SuspendPropertyController suspendPropertyController = new SuspendPropertyController(
 								propertyListing);
 
-						boolean suspendStatus = suspendPropertyController.removeProperties(type, location, price);
+						boolean suspendStatus = suspendPropertyController.suspendProperties(type, location, price);
 						if (suspendStatus) {
-							JOptionPane.showMessageDialog(null, "Properties had removed succesfully");
+							JOptionPane.showMessageDialog(null, "Properties had suspended succesfully");
 							break;
 						} else {
 							JOptionPane.showMessageDialog(null, "Fail to suspend the properties");
@@ -146,9 +146,4 @@ public class AgentViewPropertyUI extends JFrame {
 		propertyTable.revalidate();
 		propertyTable.repaint();
 	}
-
-	public static void main(String[] args) {
-		SwingUtilities.invokeLater(() -> new AgentViewPropertyUI(2));
-	}
-
 }

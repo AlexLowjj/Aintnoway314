@@ -161,9 +161,4 @@ public class CreatePropertyUI extends JDialog {
 			}
 		});
 	}
-
-	public static void main(String[] args) {
-		CreatePropertyUI dialog = new CreatePropertyUI(new JFrame(), true);
-		dialog.setVisible(true);
-	}
 }

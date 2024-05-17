@@ -82,6 +82,10 @@ public class LoginUI extends JFrame {
 							agentUI.setVisible(true);
 							dispose();
 							break;
+						case "Buyer":
+							BuyerMenuUI buyerUI = new BuyerMenuUI(userId);
+							dispose();
+							break;
 						case "Seller":
 							SellerMenuUI sellerUI = new SellerMenuUI(userId);
 							dispose();

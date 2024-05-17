@@ -190,8 +190,4 @@ public class AdminUI extends JFrame {
 		userTable.revalidate();
 		userTable.repaint();
 	}
-
-	public static void main(String[] args) {
-		SwingUtilities.invokeLater(() -> new AdminUI());
-	}
 }

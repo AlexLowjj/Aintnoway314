@@ -109,9 +109,4 @@ public class UpdateProfileUI extends JDialog {
 		}
 
 	}
-
-	public static void main(String[] args) {
-		UpdateProfileUI dialog = new UpdateProfileUI(new JFrame(), true, "1");
-		dialog.setVisible(true);
-	}
 }

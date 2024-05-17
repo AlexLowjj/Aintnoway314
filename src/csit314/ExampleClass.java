@@ -1,6 +1,5 @@
 package csit314;
 
-import boundary.BuyerMenuUI;
 import boundary.LoginUI;
 
 public class ExampleClass {

@@ -10,7 +10,7 @@ public class ViewAllPropertiesController {
 		this.propertyListing = propertyListing;
 	}
 
-	public List<String[]> getAllProperty() {
+	public List<String[]> getAllUsers() {
 		return propertyListing.getAllProperty();
 	}
 }

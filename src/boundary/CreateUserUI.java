@@ -217,9 +217,4 @@ public class CreateUserUI extends JDialog {
 		});
 
 	}
-
-	public static void main(String[] args) {
-		CreateUserUI dialog = new CreateUserUI(new JFrame(), true);
-		dialog.setVisible(true);
-	}
 }

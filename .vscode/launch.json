@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "UpdatePropertyUI",
+            "request": "launch",
+            "mainClass": "CSIT314Project/boundary.UpdatePropertyUI",
+            "projectName": "CSIT314Project"
+        },
+        {
+            "type": "java",
+            "name": "AgentViewPropertyUI",
+            "request": "launch",
+            "mainClass": "CSIT314Project/boundary.AgentViewPropertyUI",
+            "projectName": "CSIT314Project"
+        },
+        {
+            "type": "java",
+            "name": "UserProfileUI",
+            "request": "launch",
+            "mainClass": "CSIT314Project/boundary.UserProfileUI",
+            "projectName": "CSIT314Project"
+        },
+        {
+            "type": "java",
+            "name": "BuyerViewAllPropertiesUI",
+            "request": "launch",
+            "mainClass": "CSIT314Project/boundary.BuyerViewAllPropertiesUI",
+            "projectName": "CSIT314Project"
+        },
+        {
+            "type": "java",
+            "name": "AdminUI",
+            "request": "launch",
+            "mainClass": "CSIT314Project/boundary.AdminUI",
+            "projectName": "CSIT314Project"
+        },
+        {
+            "type": "java",
+            "name": "Run with AppMap",
+            "request": "launch",
+            "mainClass": "",
+            "vmArgs": "-javaagent:${userHome}\\.appmap\\lib\\java\\appmap.jar"
+        }
+    ]
+}

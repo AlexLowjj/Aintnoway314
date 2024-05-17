@@ -4,10 +4,10 @@ import java.util.List;
 
 import entity.BuyerPropertyListing;
 
-public class BuyerAddFavouriteProperty {
+public class BuyerAddFavouritePropertyController {
 private BuyerPropertyListing buyerPropertyListing;
 	
-	public  BuyerAddFavouriteProperty(BuyerPropertyListing buyerPropertyListing) {
+	public  BuyerAddFavouritePropertyController(BuyerPropertyListing buyerPropertyListing) {
 		this.buyerPropertyListing = buyerPropertyListing;
 	}
 	

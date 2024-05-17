@@ -78,8 +78,4 @@ public class ResetPasswordUI extends JFrame {
 		constraints.insets = new Insets(10, 10, 10, 10);
 		panel.add(component, constraints);
 	}
-
-	public static void main(String[] args) {
-		SwingUtilities.invokeLater(() -> new ResetPasswordUI());
-	}
 }

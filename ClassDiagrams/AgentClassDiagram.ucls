@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="boundary.AgentUI" project="CSIT314Project" 
+    file="/CSIT314Project/src/boundary/AgentUI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="123" x="677" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="boundary.AgentViewPropertyUI" project="CSIT314Project" 
+    file="/CSIT314Project/src/boundary/AgentViewPropertyUI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="296" width="370" x="2054" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="boundary.AgentViewRatingUI" project="CSIT314Project" 
+    file="/CSIT314Project/src/boundary/AgentViewRatingUI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="196" width="227" x="1022" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="boundary.AgentViewReviewUI" project="CSIT314Project" 
+    file="/CSIT314Project/src/boundary/AgentViewReviewUI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="196" width="233" x="223" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="boundary.CreatePropertyUI" project="CSIT314Project" 
+    file="/CSIT314Project/src/boundary/CreatePropertyUI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="416" width="358" x="1472" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="boundary.UpdatePropertyUI" project="CSIT314Project" 
+    file="/CSIT314Project/src/boundary/UpdatePropertyUI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="576" width="390" x="1038" y="493"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="control.AgentViewRatingController" project="CSIT314Project" 
+    file="/CSIT314Project/src/control/AgentViewRatingController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="304" x="2464" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="control.AgentViewReviewController" project="CSIT314Project" 
+    file="/CSIT314Project/src/control/AgentViewReviewController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="310" x="2808" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="control.SuspendPropertyController" project="CSIT314Project" 
+    file="/CSIT314Project/src/control/SuspendPropertyController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="359" x="639" y="493"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="control.UpdatePropertyController" project="CSIT314Project" 
+    file="/CSIT314Project/src/control/UpdatePropertyController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="499" x="1896" y="493"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="control.CreatePropertyController" project="CSIT314Project" 
+    file="/CSIT314Project/src/control/CreatePropertyController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="557" x="42" y="493"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="control.GetPropertyByCharController" project="CSIT314Project" 
+    file="/CSIT314Project/src/control/GetPropertyByCharController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="388" x="1468" y="493"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="control.ViewAllPropertiesController" project="CSIT314Project" 
+    file="/CSIT314Project/src/control/ViewAllPropertiesController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="333" x="2435" y="493"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="entity.Agent" project="CSIT314Project" 
+    file="/CSIT314Project/src/entity/Agent.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="316" width="310" x="2808" y="493"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="entity.PropertyListing" project="CSIT314Project" 
+    file="/CSIT314Project/src/entity/PropertyListing.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="636" width="571" x="1253" y="1109"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="16">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="17" name="propertyListing">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="18" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="19">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="20" name="propertyListing">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="21" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="22">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="23" name="viewPropertiesController">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="24" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="25">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="26" name="propertyListing">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="27" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="29" name="propertyListing">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="30" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="31">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="32" name="agent">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="33" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="34">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="35" name="propertyListing">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="36" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="37">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="38" name="agent">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="39" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="40">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="41" name="propertyListing">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="42" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

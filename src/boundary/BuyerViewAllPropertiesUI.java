@@ -4,15 +4,12 @@ import control.BuyerCalculateMortageController;
 import control.BuyerGetFavouritePropertyController;
 import control.BuyerGetForSalePropertyController;
 import control.BuyerGetLocationController;
-import control.BuyerGetPropertyByCharController;
 import control.BuyerGetPropertyTypeController;
 import control.BuyerGetSoldPropertyController;
 import control.BuyerViewAllPropertiesController;
 import control.BuyerViewPropertyByCharController;
-import control.SuspendPropertyController;
 import entity.BuyerPropertyListing;
 import entity.CalculateMortage;
-import entity.PropertyListing;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -295,13 +292,5 @@ public class BuyerViewAllPropertiesUI extends JFrame {
         dialog.pack();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
-    }
-
-
-
-
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new BuyerViewAllPropertiesUI(2));
     }
 }

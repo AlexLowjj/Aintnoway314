@@ -258,4 +258,9 @@ public class UpdateUserUI extends JDialog {
 			displayImage(imagePath);
 		}
 	}
+
+	public static void main(String[] args) {
+		UpdateUserUI dialog = new UpdateUserUI(new JFrame(), true, "33"); // Example user ID
+		dialog.setVisible(true);
+	}
 }

@@ -42,6 +42,7 @@ public class SellerSelectAgentUI extends JFrame {
 
 		// set components
 		setComponents();
+		setVisible(true);
 	}
 
 	public int getUserId() {
@@ -82,7 +83,6 @@ public class SellerSelectAgentUI extends JFrame {
 
 			// add scroll panel to the main frame
 			add(scrollPanel);
-			SellerSelectAgentUI.this.setVisible(true);
 
 		} else {
 			// if failed to find agent, dispose this page after click ok

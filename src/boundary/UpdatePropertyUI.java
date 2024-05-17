@@ -15,7 +15,9 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 import control.GetPropertyByCharController;
 import control.UpdatePropertyController;
+import control.UpdateUserController;
 import entity.PropertyListing;
+import entity.UserAccount;
 
 public class UpdatePropertyUI extends JDialog {
 	private JTextField typeField, locationField, descriptionField, pricingField, statusField, sellerIdField,
@@ -231,5 +233,10 @@ public class UpdatePropertyUI extends JDialog {
 			photoPath = propertyDetails.get(0);
 			displayImage(photoPath);
 		}
+	}
+
+	public static void main(String[] args) {
+		UpdatePropertyUI dialog = new UpdatePropertyUI(new JFrame(), true, "House-123 Main St-200");
+		dialog.setVisible(true);
 	}
 }

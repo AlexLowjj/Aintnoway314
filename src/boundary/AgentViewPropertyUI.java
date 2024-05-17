@@ -146,4 +146,9 @@ public class AgentViewPropertyUI extends JFrame {
 		propertyTable.revalidate();
 		propertyTable.repaint();
 	}
+
+	public static void main(String[] args) {
+		SwingUtilities.invokeLater(() -> new AgentViewPropertyUI(2));
+	}
+
 }

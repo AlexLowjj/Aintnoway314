@@ -16,6 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 
 import control.CreateProfileController;
@@ -37,7 +38,7 @@ public class UserProfileUI extends JFrame {
 		super("Role Management Dashboard");
 		initializeComponents();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(850, 800);
+		setSize(800, 800);
 		setLocationRelativeTo(null);
 		setVisible(true);
 	}
@@ -54,7 +55,7 @@ public class UserProfileUI extends JFrame {
 		inputPanel.add(new JLabel("Enter Profile Name:"));
 		inputPanel.add(searchField);
 		inputPanel.add(searchButton);
-		searchPanel.add(inputPanel, BorderLayout.WEST);
+		searchPanel.add(inputPanel, BorderLayout.CENTER);
 
 		// function right panel (create role, show users, logout)
 		JPanel rolePanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
@@ -238,5 +239,9 @@ public class UserProfileUI extends JFrame {
 		});
 		roleTable.revalidate();
 		roleTable.repaint();
+	}
+
+	public static void main(String[] args) {
+		SwingUtilities.invokeLater(() -> new UserProfileUI());
 	}
 }

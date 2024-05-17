@@ -2,13 +2,16 @@ package boundary;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
-import control.BuyerAddFavouritePropertyController;
+import control.BuyerAddFavouriteProperty;
 import control.BuyerGetPropertyByCharController;
+import control.UpdatePropertyController;
 import entity.BuyerPropertyListing;
+import entity.PropertyListing;
 
 public class BuyerViewPropertyDetailsUI extends JDialog {
     private JLabel imageLabel, typeLabel, locationLabel, descriptionLabel, pricingLabel, statusLabel, agentNameLabel, phoneLabel;
@@ -91,7 +94,7 @@ public class BuyerViewPropertyDetailsUI extends JDialog {
         	System.out.println(tempHoldPropertyID);
         	
         	BuyerPropertyListing buyerPropertyListing = new BuyerPropertyListing(userid, tempHoldPropertyID);
-        	BuyerAddFavouritePropertyController buyerAddFavouriteProperty = new BuyerAddFavouritePropertyController(buyerPropertyListing);
+        	BuyerAddFavouriteProperty buyerAddFavouriteProperty = new BuyerAddFavouriteProperty(buyerPropertyListing);
 		    Boolean status = buyerAddFavouriteProperty.addFavouriteProperty(userid, tempHoldPropertyID);
 		    if(status) {
 		    	JOptionPane.showMessageDialog(BuyerViewPropertyDetailsUI.this, "Property Added successfully");
@@ -144,5 +147,10 @@ public class BuyerViewPropertyDetailsUI extends JDialog {
                 JOptionPane.showMessageDialog(this, "Error loading image: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
         }
+    }
+
+    public static void main(String[] args) {
+        BuyerViewPropertyDetailsUI dialog = new BuyerViewPropertyDetailsUI(new JFrame(), true, "Apartment-this place-good place-2000-1");
+        dialog.setVisible(true);
     }
 }
